@@ -58,10 +58,10 @@ Scripts/
 Contains all application scripts, configuration files, and utility functions.  
 
 #### **APPLICATIONS/**  
-- **MPI/**:  
+- **MPI**:  
   - **stencyl/**: MPI-based stencil computation implementation.  
     - `stencyl.c`: heat diffusion using the Jacobi iterative method.  
-- **MQ/**:  
+- **MQ**:  
   - **message_queue.c**: Standard broker application.
   - **message_queue_dynamic.c**: Heuristic for Dynamic Global Cache Solution.  
   - **message_queue_static.c**: Heuristic for Static Global Cache Solution.  
