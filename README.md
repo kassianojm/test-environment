@@ -68,19 +68,30 @@ Contains all application scripts, configuration files, and utility functions.
   - **message_queue_static.c**: Heuristic for Static Global Cache Solution.  
 - **SPARK/**:  
   - **src/main/java/**: Contains Java implementations for Spark Streaming using varied levels of memory comsumption:  
-    - `GlobalHistogramServer.java`: Highest memory usage.
-    -- Purpose: Distributes data into fixed 10-bin histogram.
-    -- Memory: Fixed-size arrays per (rank, step).
-    -- State: mapWithState with 20s timeout.
-    - `GlobalSUMServer.java`: Moderate memory usage.
-    -- Purpose: Two-level mean calculation (local then global).
-    -- Memory: Numeric values per (rank, step), dual aggregation state.
-    -- State: mapWithState with 20s timeout.
-    - `SumServer.java`: Lower memory.
-    -- Purpose: Single-level sum calculation.
-    -- Memory: Minimal state per (rank, step).
-    -- State: mapWithState with 20s timeout.
-    - `StatelessSUMServer.java`: Computing without states.  
+  # SPARK Documentation
+
+## src/main/java/
+
+Contains Java implementations for Spark Streaming with varying memory consumption patterns:
+
+### GlobalHistogramServer.java
+- **Purpose**: Distributes data into fixed 10-bin histogram
+- **Memory Usage**: Highest (Fixed-size arrays per rank/step)
+- **State**: mapWithState with 20s timeout
+
+### GlobalSUMServer.java
+- **Purpose**: Two-level mean calculation (local then global)
+- **Memory Usage**: Moderate (Numeric values per rank/step, dual aggregation)
+- **State**: mapWithState with 20s timeout
+
+### SumServer.java
+- **Purpose**: Single-level sum calculation
+- **Memory Usage**: Low (Minimal state per rank/step)
+- **State**: mapWithState with 20s timeout
+
+### StatelessSUMServer.java
+- **Purpose**: Computing without states
+- **Memory Usage**: Minimal (Stateless computation) 
 
 
 #### **FUNCTIONS/**  
