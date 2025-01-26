@@ -1,0 +1,47 @@
+erro: Exception in thread "main" java.lang.NoClassDefFoundError: org/zeromq/ZContext
+
+java -Djava.library.path=/usr/local/lib -cp  "/usr/local/share/java/zmq.jar:target/simple-project-1.0.jar" StatelessSUMServer
+
+Doesn't work
+
+add import the libs innto java file
+
+import org.zeromq.ZMQ.Context;
+import org.zeromq.ZMQ.Poller;
+import org.zeromq.ZMQ.Socket;
+import zmq.util.Draft;
+
+POM's Update
+-spark - Script's version
+-jeroMQ - latest version, also tried version 0.3.5
+-jzmq -jzmq install 3.1.1 - https://github.com/zeromq/jzmq
+
+Add a link of zmq.jar file in /usr/local/lib and load into bashrc
+
+zmq.jar -> /usr/local/share/java/zmq.jar
+
+JeroMQ java support
+sudo apt install libjeromq-java
+
+https://github.com/miniway/jeromq install 0.3.5
+
+spark-submit [restofyouroptions] --conf "spark.driver.extraClassPath=/usr/local/share/java/zmq.jar"
+
+Thomas' workarround
+
+/jzmq/jzmq-jni/src/main/c++/.libs/
+
+~/Documents/gitRep/comd-erods/MQ/jzmq-master/jzmq-jni/src/main/c++/.libs/
+
+grep -r "_connectYggdrasi" org/ spark/ utils/
+ mvn clean
+ mvn compile assembly:single
+
+before start spark
+
+export CLASSPATH=/usr/local/share/java/zmq.jar
+export LD_LIBRARY_PATH=/home/kassiano/Documents/gitRep/comd-erods/MQ/jzmq-master/jzmq-jni/src/main/c++/.libs/:/usr/local/lib
+export PATH=/home/kassiano/Documents/gitRep/comd-erods/MQ/jzmq-master/jzmq-jni/src/main/c++/.libs/:/usr/local/lib:/home/kassiano/temp_spark/spark/bin:/home/kassiano/temp_spark/spark/sbin:/home/kassiano/temp_spark/Scala/bin:/home/kassiano/temp_spark/java/bin:/home/kassiano/Documents/gitRep/comd-erods/MQ/jzmq-master/jzmq-jni/src/main/c++/.libs/:/usr/local/lib:/home/kassiano/temp_spark/spark/bin:/home/kassiano/temp_spark/spark/sbin:/home/kassiano/temp_spark/Scala/bin:/home/kassiano/temp_spark/java/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/kassiano/mpi/openmpi-4.0.1/.openmpi/bin
+
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+            <name>fs.default.name</name>
+            <value>hdfs://172.16.20.26:9000</value>
+        </property>
+	<property>
+    		<name>hadoop.tmp.dir</name>
+    		<value>/tmp</value>
+	</property>
+
+</configuration>
+

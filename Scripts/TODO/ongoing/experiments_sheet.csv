@@ -1,0 +1,9 @@
+time,msgsize,ack,sockets,receivers,parallelism,window,batchinterval,concblocks,app,mq,rep
+30,3000000,16,8,8,256,2000,400,1,StatelessSUMServer,_WSS,3
+30,30000,32,8,8,256,2000,400,1,StatelessSUMServer,_WSS,3
+30,30000,64,8,8,256,2000,400,1,StatelessSUMServer,_WSS,3
+30,30000,128,8,8,256,2000,400,1,StatelessSUMServer,_WSS,3
+30,30000,256,8,8,256,2000,400,1,StatelessSUMServer,_WSS,3
+30,30000,512,8,8,256,2000,400,1,StatelessSUMServer,_WSS,3
+
+

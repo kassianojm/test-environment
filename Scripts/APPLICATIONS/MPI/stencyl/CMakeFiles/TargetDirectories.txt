@@ -1,0 +1,3 @@
+/home/kmatteussi/NFS_ERODS/Scripts/APPLICATIONS/MPI/stencyl/CMakeFiles/rebuild_cache.dir
+/home/kmatteussi/NFS_ERODS/Scripts/APPLICATIONS/MPI/stencyl/CMakeFiles/edit_cache.dir
+/home/kmatteussi/NFS_ERODS/Scripts/APPLICATIONS/MPI/stencyl/CMakeFiles/stencyl.dir

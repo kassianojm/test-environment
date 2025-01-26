@@ -1,0 +1,6 @@
+spark-submit --master spark://127.0.0.1:7077 --class StatelessSUMServer target/simple-project-1.0.jar --PORT 4040 --NETWORK wlp2s0 --DATASOURCES 127.0.0.1 --TEMPON 10000 --RECEIVERS 1 --CLIENTS 1 --WINDOWTIME 1000 --BLOCKINTERVAL 200 --CONCBLOCK 1 --HDFS . --PARAL 8
+
+lsgrep -r "_connectYggdrasi" org/ spark/ utils/
+ mvn clean
+ mvn compile assembly:single
+export LD_LIBRARY_PATH=/home/kassiano/Documents/gitRep/comd-erods/MQ/jzmq-master/jzmq-jni/src/main/c++/.libs/ - before start spark
