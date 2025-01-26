@@ -6,54 +6,55 @@ This repository contains scripts and configurations for managing and executing v
 
 ## **Directory Structure**
 
+<pre>
 Scripts/
 ├── APPLICATIONS
-│   ├── dmon
-│   ├── MPI
-│   │   └── stencyl
-│   │       ├── stencyl.c
-│   ├── MQ
-│   │   ├── message_queue.c
-│   │   ├── message_queue_dynamic.c
-│   │   ├── message_queue.h
-│   │   ├── message_queue_static.c
-│   └── SPARK
-│       ├── src
-│       │   ├── main
-│       │      └── java
-│       │          ├── GlobalHistogramServer.java
-│       │          ├── GlobalSUMServer.java
-│       │          ├── HistogramServer.java
-|	|	   ├── SumServer.java
-│       │          ├── StatelessSUMServer.java
+│   ├── dmon
+│   ├── MPI
+│   │   └── stencyl
+│   │       └── stencyl.c
+│   ├── MQ
+│   │   ├── message_queue.c
+│   │   ├── message_queue_dynamic.c
+│   │   ├── message_queue.h
+│   │   └── message_queue_static.c
+│   └── SPARK
+│       └── src
+│           └── main
+│               └── java
+│                   ├── GlobalHistogramServer.java
+│                   ├── GlobalSUMServer.java
+│                   ├── HistogramServer.java
+│                   ├── SumServer.java
+│                   └── StatelessSUMServer.java
 ├── CONFIG
-│   └── conf.DATA
+│   └── conf.DATA
 ├── discovery_cluster.sh
 ├── Executionloop.sh
 ├── FUNCTIONS
-│   ├── monitoring.sh
-│   ├── netAdjust.sh
-│   ├── ssh_config
-│   └── utils.sh
+│   ├── monitoring.sh
+│   ├── netAdjust.sh
+│   ├── ssh_config
+│   └── utils.sh
 ├── prepare_env.sh
 ├── README.md
 ├── SparkInstall
-│   ├── clusterSpark.sh
-│   └── Conf_Files
-│       ├── core-site.xml
-│       ├── had
-│       │   ├── core-site.xml
-│       │   ├── hadoop-env.sh
-│       │   ├── hdfs-site.xml
-│       │   └── workers
-│       ├── hdfs-site.xml
-│       └── sp
-│           ├── slaves
-│           ├── spark-defaults.conf
-│           ├── spark-env.sh
-│           └── spark-env.sh.template
-├── start_apps.sh
-
+│   ├── clusterSpark.sh
+│   └── Conf_Files
+│       ├── core-site.xml
+│       ├── had
+│       │   ├── core-site.xml
+│       │   ├── hadoop-env.sh
+│       │   ├── hdfs-site.xml
+│       │   └── workers
+│       ├── hdfs-site.xml
+│       └── sp
+│           ├── slaves
+│           ├── spark-defaults.conf
+│           ├── spark-env.sh
+│           └── spark-env.sh.template
+└── start_apps.sh
+</pre>
 ### **Scripts/**
 Contains all application scripts, configuration files, and utility functions.  
 
