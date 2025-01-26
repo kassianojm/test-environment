@@ -9,7 +9,6 @@ This repository contains scripts and configurations for managing and executing v
 <pre>
 Scripts/
 ├── APPLICATIONS
-│   ├── dmon
 │   ├── MPI
 │   │   └── stencyl
 │   │       └── stencyl.c
@@ -61,9 +60,9 @@ Contains all application scripts, configuration files, and utility functions.
 #### **APPLICATIONS/**  
 - **MPI/**:  
   - **stencyl/**: MPI-based stencil computation implementation.  
-    - `stencyl.c`: Source code for the stencil application.  
+    - `stencyl.c`: heat diffusion using the Jacobi iterative method.  
 - **MQ/**:  
-  - **message_queue.c**: Standard broker application .
+  - **message_queue.c**: Standard broker application.
   - **message_queue_dynamic.c**: Heuristic for Dynamic Global Cache Solution.  
   - **message_queue_static.c**: Heuristic for Static Global Cache Solution.  
 * **SPARK:** Contains Java implementations for Spark Streaming using varied levels of memory consumption patterns:
