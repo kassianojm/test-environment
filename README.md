@@ -67,12 +67,7 @@ Contains all application scripts, configuration files, and utility functions.
   - **message_queue_dynamic.c**: Heuristic for Dynamic Global Cache Solution.  
   - **message_queue_static.c**: Heuristic for Static Global Cache Solution.  
 - **SPARK/**:  
-  - **src/main/java/**: Contains Java implementations for Spark Streaming using varied levels of memory comsumption:  
-  # SPARK Documentation
-
-## src/main/java/
-
-Contains Java implementations for Spark Streaming with varying memory consumption patterns:
+  - **src/main/java/**: Contains Java implementations for Spark Streaming using varied levels of memory consumption patterns:
 
 ### GlobalHistogramServer.java
 - **Purpose**: Distributes data into fixed 10-bin histogram
